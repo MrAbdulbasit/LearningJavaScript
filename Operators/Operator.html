@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+<h3>JavaScript Arithmetic Operators</h3>
+<p>Use (+) Operator</p>
+<p id="sum"></p>
+
+<hr/>
+<p>Use (-) Operator</p>
+<p id="minus"></p>
+
+<hr/>
+<p>Use (*) Operator</p>
+<p id="multiply"></p>
+
+
+<hr/>
+<p>Use (/) Operator</p>
+<p id="divide"></p>
+
+<hr/>
+<p>Use (++)Increment Operator</p>
+<p id="Increment"></p>
+<p id="AfterIncrement"></p>
+
+<hr/>
+<p>Use (--)Decrement Operator</p>
+<p id="Decrement"></p>
+<p id="AfterDecrement"></p>
+
+<hr/>
+<hr/>
+
+<h3>JavaScript Assignment Operators Examples</h3>
+<hr/>
+<h5>The = Operator</h5>
+<p id="Demo1"></p>
+
+<hr/>
+<h5>The += Operator</h5>
+<p id="Demo2"></p>
+
+<hr/>
+<h5>The -= Operator</h5>
+<p id="Demo3"></p>
+
+<hr/>
+<h5>The *= Operator</h5>
+<p id="Demo4"></p>
+
+<hr/>
+<h5>The /= Operator</h5>
+<p id="Demo5"></p>
+
+<hr/>
+<hr/>
+
+<h3>JavaScript Comparison and Logical Operators</h3>
+<hr/>
+<h5> > Greater than </h5>
+<p id="logi_greaterthan"></p>
+
+
+<hr/>
+<h5> < Less than </h5>
+<p id="logi_Lessthan"></p>
+
+
+<hr/>
+<h5> && Double And </h5>
+<p id="doubleAnd"></p>
+
+<hr/>
+<h5> || Or Sign </h5>
+<p id="doubleOr"></p>
+
+<hr/>
+<h5> != Not Equal </h5>
+<p id="not_equal"></p>
+
+<hr/>
+<h5> !== not equal value or not equal typel </h5>
+<p id="not_equal_val_OrType"></p>
+
+<hr/>
+<h5> == equal to </h5>
+<p id="equal_to"></p>
+
+<hr/>
+<h5> === equal value and equal type </h5>
+<p id="equal_val_equal_type"></p>
+
+<hr/>
+<h5> >= greater than or equal to </h5>
+<p id="greaterThan_equal_to"></p>
+
+<hr/>
+<h5> <= less than or equal to </h5>
+<p id="less_than_equal_to"></p>
+
+
+
+
+<script>
+
+
+    //Operators_datatype
+
+    //  +	 Addition
+    //  -	 Subtraction
+    //  *	 Multiplication
+    //  /	 Division
+    //  ++ Increment
+    //  -- Decrement
+
+    var a = 10;
+    var b = 20;
+    var x = 100;
+    var y = 100;
+    var z = "100";
+    var number = a + b ;
+    var num_minus = a - b;
+    var num_multiply = a * b;
+    var num_divide = a / b;
+
+    /*-----  JavaScript Arithmetic Operators  -----*/
+
+    document.getElementById("sum").innerHTML = number;
+    document.getElementById("minus").innerHTML = num_minus;
+    document.getElementById("multiply").innerHTML = num_multiply;
+    document.getElementById("divide").innerHTML = num_divide;
+    document.getElementById("Increment").innerHTML = a++ + "    <===Before Increment";  //Before Increment (10 is the value of variable a)
+    document.getElementById("AfterIncrement").innerHTML = a + "    <===After Increment"; //After Increment (value of variable "a" is 11).
+    document.getElementById("Decrement").innerHTML = a-- + "   <===Before Decrement ";  //Before Decrement...( As you know after Increment variable have value 11 )
+    document.getElementById("AfterDecrement").innerHTML = a + "   <=== After Decrement"; //After Decrement (value of variable "a" is again 10).
+
+    /*.......JavaScript Assignment Operators Examples.......*/
+
+    document.getElementById("Demo1").innerHTML = a = 100;    //The = Operator    (now variable "a" value is 100)
+    document.getElementById("Demo2").innerHTML = a +=100 ;   //The += Operator   (now variable "a" value is 200)
+    document.getElementById("Demo3").innerHTML = a -=150 ;   //The -= Operator   (now variable "a" value is 50)
+    document.getElementById("Demo4").innerHTML = a *=2 ;   //The -= Operator     (now variable "a" value is 100)
+    document.getElementById("Demo5").innerHTML = a /=10 ;   //The -= Operator    (now variable "a" value is 10)
+
+    /*.......JJavaScript Comparison and Logical Operators.......*/
+    document.getElementById("logi_greaterthan").innerHTML = x > 50;
+    document.getElementById("logi_Lessthan").innerHTML = x < 50;
+    document.getElementById("doubleAnd").innerHTML =  x > 200 && x < 50;  // Dono Statement must be true
+    document.getElementById("doubleOr").innerHTML = x > 50 || x < 50;
+    document.getElementById("not_equal").innerHTML = x != y;
+    document.getElementById("not_equal_val_OrType").innerHTML = x !== z;
+    document.getElementById("equal_to").innerHTML = x == y;
+    document.getElementById("equal_val_equal_type").innerHTML = x === z;
+    document.getElementById("greaterThan_equal_to").innerHTML = x >= y;
+    document.getElementById("less_than_equal_to").innerHTML = x <= y;
+
+
+
+</script>
+</body>
+</html>
